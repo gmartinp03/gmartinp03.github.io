@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3d42d09dfa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Gabriel Pederson Portfolio Website</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="logo"><i class="fa-brands fa-space-awesome"></i></h1>
+      <input type="checkbox" id="toggle-nav" class="toggle-nav" />
+      <nav class="navbar">
+        <ul id="nav-links">
+          <li><a href="#section-intro">About</a></li>
+          <li><a href="#section-experience">Experience</a></li>
+          <li><a href="#section-projects">Projects</a></li>
+          <li><a href="#section-contact">Contact Me</a></li>
+        </ul>
+      </nav>
+      <label for="toggle-nav" class="toggle-nav-label">
+        <span></span>
+      </label>
+    </header>
+
+    <main>
+      <section class="intro" id="section-intro">
+        <h1 class="title">Hi! I am Gabriel Pederson,</h1>
+        <h2 class="subtitle">An Aspiring Aerospace Engineer</h2>
+        <p>
+          But you can call me Gabe. I am an Aerospace Engineering student at
+          Iowa State University, expecting to graduate in December 2024. Since I
+          am minoring in Computer Science, I decided to develop my skills by
+          trying something new: this website!
+        </p>
+      </section>
+
+      <section id="section-experience" class="container">
+        <h2 class="title">Experience</h2>
+        <div class="group">
+          <div class="box">
+            <h3 class="subtitle">MidAmerican Energy Company</h3>
+            <h3 class="subtitle">Engineering Intern</h3>
+            <div class="box-content">
+              <img
+                src="images/MidAmWind.jpg"
+                alt="Gabe on MidAM Wind Turbine"
+              />
+              <p>
+                In the Summer of 2022, I supported renewable generation
+                operations by reviewing project documentation and data mining
+                turbine data for lightning protection system upgrades. I mainly
+                used Excel to track serial numbers, dates, and turbine
+                information for over 3,000 lightning protection systems and to
+                automatically accept/reject reports. I also compiled turbine
+                metadata to create standard reference maps for contractor use.
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <h3 class="subtitle">Your Company!</h3>
+            <div class="box-content">
+              <p>
+                I am currently looking for an internship or co-op starting in
+                2023
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-projects" class="container">
+        <h2 class="title">Projects</h2>
+        <div class="group">
+          <div class="box">
+            <h3 class="subtitle">Cyclone Rocketry</h3>
+            <div class="box-content">
+              <img
+                src="images/CyRoc-parachute.jpg"
+                alt="Image of Final Parachute"
+              />
+              <p>
+                As a member of the recovery team, I worked on researching and
+                manufacturing a parachute ejection system for the SRAD 10k
+                Spaceport America Competition. We reworked a reefing box system
+                to compare it to the standard two-stage ejection system. After
+                deciding the two-stage ejection was more reliable, I helped to
+                create a subscale model of our main parachute for wind tunnel
+                testing. Eventually, we manufactured the full-scale parachute
+                and successfully recovered the rocket at the competition.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <h3 class="subtitle">SolidWorks A380</h3>
+            <div class="box-content">
+              <img src="images/A380.jpg" alt="SolidWorks A380" />
+              <p>
+                I worked with a team of other Aerospace Majors to create a scale
+                model of an Airbus A380 in SolidWorks. I specifically worked on
+                the fuselage, undercarriage, horizontal stabilizers, and
+                engine/wing connectors. I also added the aircraft livery and
+                window details while putting the final assembly together.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <h3 class="subtitle">Lighter Than Air</h3>
+            <div class="box-content">
+              <p>
+                Given the 90's game show theme, Baggage, my team had to create a
+                craft capable of stable flight that was under a weight limit,
+                met a budget, and represented our theme. The craft was
+                constructed from balsa wood and could be attached to a large
+                balloon for flight. We built our craft to look like a suitcase,
+                the centerpiece in Baggage. It was capable of stable flight and
+                movement in all directions with three propellors and a rudder.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="section-contact" class="footer">
+      <p>Contact:</p>
+      <a href="mailto:gmartinp03@outlook.com">Email </a>
+      <a href="https://linkedin.com/in/gabriel-pederson" target="_blank"
+        >LinkedIn</a
+      >
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>

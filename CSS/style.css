@@ -1,0 +1,282 @@
+* {
+margin: 0;
+padding: 0;
+}
+/* Base */
+:root{
+   --main-color: #16262e;
+   --accent-1: #2e4756;
+   --accent-2: #3c7a89;
+   --text-2: #9fa2b2;
+   --text-1: #dbc3cf;
+
+}
+html{
+   scroll-behavior: smooth;
+}
+body{
+   background-color: var(--main-color);
+   font-family:Verdana, sans-serif;
+   color: var(--text-1);
+   line-height: 1.5;
+}
+/* Navigation */
+.logo{
+   color: var(--accent-2);
+}
+
+.header{
+   background-color: var(--accent-1);
+   text-align: center;
+   position: fixed;
+   z-index: 999;
+   width: 100%;
+}
+
+.navbar{
+ background: var(--accent-1);
+ position:absolute;
+ text-align: left;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ transform: scale(1,0);
+ transform-origin: top;
+ transition: transform 400ms ease-in-out;
+} 
+
+.toggle-nav{
+   display: none;
+}
+
+.toggle-nav-label {
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin-left: 1em;
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.toggle-nav-label span,
+.toggle-nav-label span::before,
+.toggle-nav-label span::after {
+   display: block;
+   background: var(--text-1);
+   height: 2px;
+   width: 2em;
+   position: relative;
+}
+
+.toggle-nav-label span::before,
+.toggle-nav-label span::after {
+content:'';
+position: absolute;
+}
+
+.toggle-nav-label span::before {
+bottom: 7px;
+}
+
+.toggle-nav-label span::after {
+   top: 7px;
+}
+
+.navbar ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.navbar li{
+ margin-bottom: 1em;
+ margin-left: 1em;
+}
+
+.navbar a{
+color: var(--text-1);
+text-decoration: none;
+font-size: 1.2rem;
+text-transform: uppercase;
+opacity: 0;
+transition: opacity 150ms ease-in-out;
+}
+
+.navbar a:hover{
+  color: var(--text-2);
+}
+
+.toggle-nav:checked ~ nav{
+transform: scale(1,1);
+}
+
+.toggle-nav:checked ~ nav a{
+  opacity: 1; 
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/* Body */
+
+section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center ;
+   align-items: center;
+   text-align: center;
+}
+
+.container{
+   width: 80%;
+   margin: 0px auto 0px;
+}
+.box{
+   box-shadow: 0 0 20px var(--accent-1);
+   padding: 10px;
+   border-radius: 15px;
+   margin: 0 0 30px ;
+}
+.title{
+   font-size: 1.3em;
+   padding-bottom: 10px;
+   padding-top: 70px;
+   color: var(--accent-2);
+}
+.subtitle{
+   font-size: 1.1em;
+   padding-bottom: 10px;
+   color: var(--text-2);
+}
+.intro{
+   width: 85%;
+   margin: 0px auto;
+}
+img{
+   display: none;
+}
+
+/* Footer */
+.footer{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 100%;
+   background-color: var(--accent-1);
+   margin-top: 32px;
+   color: var(--text-2);
+   font-weight: bold;
+}
+.footer a{
+   text-decoration: none;
+   color: var(--text-1);
+   padding: 10px 0;
+}
+.footer a:hover{
+   color: var(--text-2);
+}
+
+/* Desktop */
+@media screen and (min-width: 800px){
+/* Base */
+
+img{
+   display: block;
+   max-height: 500px;
+   border-radius: 3px;
+}
+::-webkit-scrollbar {
+   width: 0;   
+}
+::-webkit-scrollbar-track {
+   background: var(--accent-2);  
+}
+::-webkit-scrollbar-thumb {
+   background-color: var(--accent-1); 
+   border: 3px solid var(--accent-2);
+}
+::-webkit-scrollbar-thumb:hover {
+ background-color: var(--main-color);
+ border: 0; 
+}
+/* Navigation */
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 1em;
+   width: 100%;
+   height: 50px;
+}
+.navbar{
+   all: unset;
+}
+.toggle-nav-label{
+   display: none;
+}
+.navbar ul{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-right: 20px;
+}
+.navbar li{
+   margin: 0;
+   padding: 0 10px;
+}
+.navbar a{
+   font-size: 16px;
+   opacity: 1;
+
+}
+
+/* Body */
+
+.container{
+   display: flex;
+}
+#section-experience .group{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#section-projects .group{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+.box{
+display: flex;
+flex-direction: column;
+margin: 30px 30px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.box-content{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+#section-intro p{
+   max-width: 600px;
+}
+
+p{
+   max-width: 400px;
+   padding: 20px;
+}
+
+/* Footer */
+.footer{
+   justify-content: center;
+}
+.footer a{
+   padding: 0px 20px;
+}
+}
+
