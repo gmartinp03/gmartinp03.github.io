@@ -1,2 +1,0 @@
-# gabepederson.com
-My Webite
