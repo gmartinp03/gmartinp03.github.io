@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f866b64.css",
-    "main.js": "/static/js/main.cdf1c7fc.js",
-    "index.html": "/index.html",
-    "main.3f866b64.css.map": "/static/css/main.3f866b64.css.map",
-    "main.cdf1c7fc.js.map": "/static/js/main.cdf1c7fc.js.map"
+    "main.css": "/gmartinp03.github.io/static/css/main.3f866b64.css",
+    "main.js": "/gmartinp03.github.io/static/js/main.cdf1c7fc.js",
+    "index.html": "/gmartinp03.github.io/index.html",
+    "main.3f866b64.css.map": "/gmartinp03.github.io/static/css/main.3f866b64.css.map",
+    "main.cdf1c7fc.js.map": "/gmartinp03.github.io/static/js/main.cdf1c7fc.js.map"
   },
   "entrypoints": [
     "static/css/main.3f866b64.css",
