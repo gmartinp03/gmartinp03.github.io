@@ -7,6 +7,7 @@ const Experience = ({ experience }) => {
           <div className="exper-card" key={experience.id}>
             <h2 className="exper-title">{experience.title}</h2>
             <h3 className="exper-subtitle">{experience.subtitle}</h3>
+            <h4 className="exper-date">{experience.date}</h4>
             <img className="exper-img" src={experience.image} alt="" />
             <p>{experience.detail}</p>
           </div>
