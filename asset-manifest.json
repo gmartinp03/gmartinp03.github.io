@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/gmartinp03/gmartinp03.github.io/static/css/main.3f866b64.css",
-    "main.js": "/gmartinp03/gmartinp03.github.io/static/js/main.5b13fc1a.js",
-    "index.html": "/gmartinp03/gmartinp03.github.io/index.html",
-    "main.3f866b64.css.map": "/gmartinp03/gmartinp03.github.io/static/css/main.3f866b64.css.map",
-    "main.5b13fc1a.js.map": "/gmartinp03/gmartinp03.github.io/static/js/main.5b13fc1a.js.map"
+    "main.css": "/static/css/main.3f866b64.css",
+    "main.js": "/static/js/main.cdf1c7fc.js",
+    "index.html": "/index.html",
+    "main.3f866b64.css.map": "/static/css/main.3f866b64.css.map",
+    "main.cdf1c7fc.js.map": "/static/js/main.cdf1c7fc.js.map"
   },
   "entrypoints": [
     "static/css/main.3f866b64.css",
-    "static/js/main.5b13fc1a.js"
+    "static/js/main.cdf1c7fc.js"
   ]
 }
